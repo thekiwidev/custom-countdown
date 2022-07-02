@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper h1 {
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.timer-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3em;
+}
+
+.timer-select .select-container {
+  position: relative;
+}
+
+.timer-select .select-container select {
+  outline: none;
+  border: 1px solid #00000074;
+  padding: 0.3em 0.7em;
+  font-size: 1rem;
+}
+
+.timer-select .select-container select#hour {
+  border-right: none;
+  border-top-left-radius: 0.8em;
+  border-bottom-left-radius: 0.8em;
+}
+
+.timer-select .select-container select#seconds {
+  border-left: none;
+  border-top-right-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+}
+
+.timer-select .select-container select option {
+  text-align: center;
+  background: #00000099;
+  color: #fff;
+  -webkit-backdrop-filter: blur(8.5px);
+          backdrop-filter: blur(8.5px);
+  font-size: 1.1rem;
+}
+
+.start-btn {
+  width: 200px;
+  padding: 0.6em 1.4em;
+  border-radius: 0.8em;
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.start-btn:disabled {
+  cursor: not-allowed;
+  background: #707070;
+  color: #2d2d2d;
+}
+
+.countdown .content {
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown .content div {
+  font-size: 3rem;
+}
+
+.countdown .content div.miliseconds {
+  font-size: 1.5rem;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: 0.3em;
+}
+
+.countdown .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.countdown .pause-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #039b15;
+  background: #23a131;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.countdown .pause-btn:disabled {
+  border-color: #499d53;
+  background: #7575754d;
+  color: #7d7d7d;
+}
+
+.countdown .cancel-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid grey;
+  cursor: pointer;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  background: #ff00008b;
+  color: #000;
+  border: 2px solid red;
+}
+
+.countdown .cancel-btn:disabled {
+  border-color: #ff00007a;
+  background: #7575754d;
+  color: #7d7d7d;
+}
+/*# sourceMappingURL=index.css.map */

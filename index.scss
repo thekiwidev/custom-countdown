@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+
+  text-align: center;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+  }
+}
+
+.timer-select {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 3em;
+  .select-container {
+    position: relative;
+
+    select {
+      outline: none;
+      border: 1px solid #00000074;
+
+      padding: 0.3em 0.7em;
+
+      font-size: 1rem;
+
+      &#hour {
+        border-right: none;
+        border-top-left-radius: 0.8em;
+        border-bottom-left-radius: 0.8em;
+      }
+      &#seconds {
+        border-left: none;
+        border-top-right-radius: 0.8em;
+        border-bottom-right-radius: 0.8em;
+      }
+
+      option {
+        text-align: center;
+
+        background: #00000099;
+        color: #fff;
+
+        backdrop-filter: blur(8.5px);
+
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.start-btn {
+  width: 200px;
+  padding: 0.6em 1.4em;
+  border-radius: 0.8em;
+
+  margin-bottom: 2rem;
+
+  outline: none;
+  border: none;
+
+  background: #000;
+  color: #fff;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s all ease;
+
+  &:disabled {
+    cursor: not-allowed;
+
+    background: #707070;
+    color: #2d2d2d;
+  }
+}
+
+.countdown {
+  .content {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+
+    div {
+      font-size: 3rem;
+
+      &.miliseconds {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        align-self: end;
+        margin-bottom: 0.3em;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pause-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    margin-right: 0;
+
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+
+    border: 2px solid #039b15;
+    background: #23a131;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.4s all ease;
+    &:disabled {
+      border-color: #499d53;
+      background: #7575754d;
+      color: #7d7d7d;
+    }
+  }
+  .cancel-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    margin-right: 0;
+
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+
+    border: 2px solid grey;
+
+    cursor: pointer;
+
+    transition: 0.4s all ease;
+    background: #ff00008b;
+    color: #000;
+    border: 2px solid red;
+
+    &:disabled {
+      border-color: #ff00007a;
+      background: #7575754d;
+      color: #7d7d7d;
+    }
+  }
+}
